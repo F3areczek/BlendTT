@@ -1,5 +1,6 @@
 ﻿body {
     padding-bottom: 20px;
+    overflow-x: hidden;
 }
 
 /* Wrapping element */
@@ -71,12 +72,28 @@
     padding: 0px;
 }
 
-    .navbar-brand > img {
-        height: 100%;
-        padding: 15px;
-        width: auto;
-    }
+.navbar-brand > img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
 
 .navbar-nav > li > .dropdown-menu {
     z-index: 9999;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #222;
+    color: #1e94cc;
+    text-align: center;
+}
+
+.footer-text{
+    padding-top: 20px;
 }
