@@ -2,4 +2,98 @@
     ViewData["Title"] = "Home Page";
 }
 
-ahoj
+<div class="container">
+    <div class="jumbotron">
+        <h1>Bootstrap Tutorial</h1>
+        <p>
+            Bootstrap is the most popular HTML, CSS, and JS framework for developing
+            responsive, mobile-first projects on the web.
+        </p>
+    </div>
+    <div class="row">
+        @*Content*@
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading side-panel-heading">Latest content</div>
+                <div class="panel-body">
+                    @*One new content*@
+                    <div class="row">
+                        <div class="col-md-6">
+                            <video width="350" height="200" autoplay muted loop>
+                                <source src="~/media/Demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-md-6">
+                            Label
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*Sidebar*@
+        <div class="col-md-4">
+            <div class="col-md-12 row-no-padding">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-12 side-panel row-no-padding">
+                <div class="panel panel-default">
+                    <div class="panel-heading side-panel-heading">Categories</div>
+                    <div class="panel-body">
+                        <ul id="tree1">
+                            <li>
+                                TECH
+                                <ul>
+                                    <li>Company Maintenance</li>
+                                    <li>
+                                        Employees
+                                        <ul>
+                                            <li>
+                                                Reports
+                                                <ul>
+                                                    <li>Report1</li>
+                                                    <li>Report2</li>
+                                                    <li>Report3</li>
+                                                </ul>
+                                            </li>
+                                            <li>Employee Maint.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Human Resources</li>
+                                </ul>
+                            </li>
+                            <li>
+                                XRP
+                                <ul>
+                                    <li>Company Maintenance</li>
+                                    <li>
+                                        Employees
+                                        <ul>
+                                            <li>
+                                                Reports
+                                                <ul>
+                                                    <li>Report1</li>
+                                                    <li>Report2</li>
+                                                    <li>Report3</li>
+                                                </ul>
+                                            </li>
+                                            <li>Employee Maint.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Human Resources</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
